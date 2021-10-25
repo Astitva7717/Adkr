@@ -12,7 +12,7 @@
 		<div class='mb-3'>
 			<%= form_with(model: [@post, @paragraph])  do |form| %>	
 			  <%= form.hidden_field :element_type, value: 'paragraph' %>
-		 	  <%= form.submit 'paragraph', class: 'btn btn-primary' %>
+		 	  <%= form.submit 'Paragraph', class: 'btn btn-primary' %>
 		 	<% end %>
 		</div>
 		<div class="card">
@@ -26,7 +26,7 @@
 					<div class='paragraph-form d-none'>
 						<%= form_with(model: [@post, element]) do |form| %>
 						<%= form.rich_text_area :content %>
-						<%= form.submit 'save', class: 'btn btn-primary mt-3' %>
+						<%= form.submit 'Save', class: 'btn btn-primary mt-3' %>
 						<a href="#" class='cancel btn btn-secondary'>Cancel</a>
 						<% end %>
 					</div>
